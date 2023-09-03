@@ -9,7 +9,10 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     <StarRating />
-    <StarRating maxRating={5} />
-    <StarRating maxRating={10} />
+    <StarRating
+      maxRating={5}
+      messages={['Terrible', 'Bad', 'Good', 'Better', 'Amazing']}
+    />
+    <StarRating maxRating={10} defaultRating={3} />
   </React.StrictMode>
 );
